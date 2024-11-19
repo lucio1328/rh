@@ -1,0 +1,75 @@
+Back-Office - Gestion administrative
+1. Gestion des utilisateurs (Admin, Employés, Candidats)
+ CRUD sur les utilisateurs (ajout, modification, suppression, affichage).
+ Gestion des rôles avec restrictions d'accès basées sur les privilèges.
+ Intégration d'une fonctionnalité pour réinitialiser les mots de passe.
+ Import/Export des données utilisateurs en CSV/Excel.
+2. Gestion des employés
+ CRUD sur les employés.
+ Assigner des compétences aux employés.
+ Gérer les promotions (changement de poste avec historique).
+ Générer des contrats automatiquement (modèle PDF basé sur les données des employés et postes).
+ Suivi des périodes d’essai (avec rappels pour les dates de fin).
+ Gérer les postes attribués avec un tableau de bord des compétences.
+3. Gestion des postes et des compétences
+ CRUD sur les postes.
+ Associer des employés à un poste avec un niveau de compétence et une expérience.
+ Gestion des compétences (CRUD) et leur association aux employés.
+4. Gestion des candidatures
+ CRUD sur les offres d'emploi.
+ Automatiser les candidatures via un formulaire public ou une API.
+ Validation et tri des candidatures (en attente, acceptée, refusée).
+ Génération automatique de notifications pour les candidats (statut de la candidature).
+ Suivi des étapes des candidatures (évaluation, entretien).
+5. Suivi des évaluations et des entretiens
+ Enregistrement des scores et commentaires pour les évaluations.
+ Planification des entretiens avec un calendrier intégré.
+ Suivi des résultats des entretiens (positif, négatif, en attente).
+6. Gestion des contrats
+ Générer automatiquement les contrats d’embauche avec les données des employés/postes.
+ Envoyer les contrats aux employés pour signature numérique.
+ Gestion des types de contrats (CDI, CDD) avec rappels pour les fins de contrat.
+7. Notifications et automatisation
+ Système de notifications pour les événements importants (fin de contrat, fin de période d’essai, nouveaux candidats, etc.).
+ Automatisation des rappels par email (période d’essai, entretiens à venir).
+ Tableau de bord des tâches en attente pour les administrateurs.
+
+
+
+ 
+Front-Office - Portail utilisateur
+1. Espace candidat
+ Interface pour consulter et postuler aux offres disponibles.
+ Soumission des candidatures avec upload de CV et lettre de motivation.
+ Suivi du statut des candidatures en temps réel.
+ Notifications pour les mises à jour (acceptation, refus, entretien prévu).
+2. Espace employé
+ Tableau de bord personnel avec :
+Informations sur le poste actuel.
+Liste des compétences.
+Historique des promotions et contrats.
+ Notifications pour les rappels de période d’essai ou fin de contrat.
+ Téléchargement des contrats et documents relatifs.
+3. Espace administrateur
+ Vue d’ensemble des employés, candidats, et postes.
+ Outils de recherche et filtres avancés (par compétences, poste, statut).
+ Gestion des offres d’emploi.
+ Tableau de bord avec statistiques (nombre de candidatures, employés par poste, etc.).
+4. Formulaire public pour les candidatures
+ Affichage des offres disponibles.
+ Formulaire de candidature (nom, prénom, email, CV, lettre de motivation).
+ Confirmation de soumission avec suivi via email.
+Automatisation et intégration
+1. Automatisation des processus
+ Génération automatique des contrats basés sur les modèles prédéfinis.
+ Suivi automatisé des candidatures avec rappels pour les actions nécessaires.
+ Planification des entretiens basée sur la disponibilité des recruteurs et des candidats.
+ Notifications automatiques pour les candidats/employés (fin de contrat, mise à jour du statut, etc.).
+2. Intégration
+ API pour connecter l'application avec d'autres systèmes (par ex. paie ou CRM).
+ Import/export des données en formats standard (CSV/Excel).
+ Intégration avec des outils de signature électronique (ex. DocuSign).
+Bonus : Fonctionnalités avancées
+ Dashboard analytique avec graphiques (offres pourvues, candidatures par statut, etc.).
+ Module de messagerie interne pour faciliter la communication entre candidats, employés, et administrateurs.
+ Gestion des permissions pour chaque rôle (admin, employé, candidat).
